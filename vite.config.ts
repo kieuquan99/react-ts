@@ -7,5 +7,5 @@ export default defineConfig({
   server: {
     port: 5175, // Cổng mặc định của Vite
     host: '0.0.0.0' // Cho phép truy cập từ bên ngoài container
-  }
+  },
 })
