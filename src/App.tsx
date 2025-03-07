@@ -87,10 +87,7 @@ function App() {
 
   const [srcAvatar, setSrcAvatar] = useState<string | null>(null)
   useEffect(() => {
-    const idInterval = setInterval(() => {
-      setNumber(preNumber => preNumber + 1)
-    }, 1000)
-    return () => clearInterval(idInterval)
+    setNumber(preNumber => preNumber + 1)
   }, []);
 
   useEffect(() => {

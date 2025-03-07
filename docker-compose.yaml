@@ -1,0 +1,21 @@
+version: '3.9'
+services:
+  frontend:
+    container_name: react-vite-app
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    volumes:
+      - ./:/app
+      - /app/node_modules
+
+    ports:
+      - '5175:5175'
+
+    environment:
+      - NODE_ENV=development
+
+    command: npm run dev
+    
